@@ -1,0 +1,38 @@
+body {
+	background-color: rgba(42, 42, 42, 1);
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 100%;
+}
+
+section {
+	text-align: center;
+	position: fixed;
+	width: 100%;
+}
+
+/* Name of place */
+#location-name {
+	font-size: 8em;
+}
+
+/* Weather Icon */
+#location-weather-icon {
+	font-size: 20em;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+
+/* Weather status */
+#location-weather-text {
+	font-size: 10em;
+}
+
+/* Temperature */
+#location-temperature {
+	font-size: 10em;
+}
+
+#location-temperature:hover {
+	color: orange;
+}

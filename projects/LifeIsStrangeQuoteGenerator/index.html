@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+	
+		<title>Quotes from Life Is Strange</title>
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Jquery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.js"></script>
+				
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		
+		<!-- Font-Awesome -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		
+		<!-- Stylesheet -->
+		<link rel="stylesheet" href="css/stylesheet.css">
+		
+	</head>
+
+	<body>
+		
+		<!-- Youtube video background-->
+		<div id="bg-video" style="position: fixed; z-index: -99; width: 100%; height: 100%">
+			<iframe frameborder="0" height="100%" width="100%" src=""></iframe>
+		</div>
+		
+		<!-- Layer between Youtube video and main content, to prevent clicking Youtube video -->
+		<div id="extra-layer" style="position: fixed; z-index:-1; min-width: 100%; min-height: 100%"></div>
+		
+		<!-- Audio -->
+		<audio id="diary-sms-open" preload="auto">
+			<source src="media/audio/Diary_Sms_Open.ogg" type="audio/ogg">
+		</audio>
+
+		<!-- Quote Container -->
+		<div id="quote-container" class="noselect">
+		
+			<!-- Quote -->
+			<div id="quote-content" class="text-center">
+				Click here to generate a quote.
+			</div>
+			
+			<!-- Quote Source -->
+			<div>
+				<span id="quote-source">
+					<!-- Placeholder -->
+				</span>
+			</div>
+			
+						
+			<!-- Social Media -->
+			</br>
+			<div id="btnarray-social-media" class="hidden">
+			
+				<!-- Twitter Share -->
+				<a id="btn-twitter" class="btn" href="" target="_blank">
+					<i class="fa fa-twitter fa-fw" aria-hidden="true"></i>
+				</a>
+				
+				<!-- Copy to clipboard. 
+				<a id="btn-copy" type="button" class="btn">
+					<i class="fa fa-copy fa-fw" aria-hidden="true"></i>
+				</a>-->
+			</div>
+		</div>
+
+					
+
+		
+		<!-- Footer -->
+		<div id="footer" class="navbar-fixed-bottom text-center">
+			Copyright &copy; 2016 <a href="http://www.jonbalon.io" target="_blank">Jon Balon</a>. All rights reserved. <br/>All Life is Strange media and content remain property of <a href="http://www.dont-nod.com/" target="_blank">DONTNOD Entertainment</a>.
+		</div>
+	
+		<!-- Quote generation logic -->
+		<script type="text/javascript" src="js/quote-generator.js"></script>
+		
+		<!-- DOM Manipulation code -->
+		<script type="text/javascript" src="js/script.js"></script>
+
+	</body>
+</html>

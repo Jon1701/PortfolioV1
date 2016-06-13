@@ -1,0 +1,102 @@
+<html>
+
+  <head>
+    <title>Weather</title>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- Main JS Logic -->
+    <script type="text/javascript" src="js/weather.js"></script>
+
+    <!-- Weather Icons -->
+    <link rel="stylesheet" href="css/weather-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-hQpvDQiCJaD2H465dQfA717v7lu5qHWtDbWNPvaTJ0ID5xnPUlVXnKzq7b8YUkbN" crossorigin="anonymous">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+  </head>
+
+  <body>
+
+    <!-- Body content container -->
+    <div id="container" class="container-fluid">
+
+
+
+
+      <!-- Auto-detect location -->
+      <section id="section-location-autodetect" class="">
+        <div>
+          <h1>Automatically detecting your current location</h1>
+        </div>
+      </section>
+
+
+
+
+
+
+      <!-- Weather -->
+      <section id="section-weather-main" class="hidden">
+
+        <!-- Location Name -->
+        <div id="location-name"></div>
+
+        <!-- Weather Icon -->
+        <i class="wi" id="location-weather-icon"></i>
+
+        <!-- Weather Text -->
+        <div>
+          <h4 id="location-weather-text">{{ #location-weather-text }}</h4>
+        </div>
+
+        <!-- Temperature -->
+        <div id="location-temperature">
+          <{{ #location-temperature }}
+        </div>
+
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <section id="section-weather-error" class="hidden">
+        <div>
+          <h1>Error</h1>
+		  <h3 id="error-msg">{{ #error-msg }}</h3>
+        </div>
+      </section>
+
+
+
+    </div>
+
+  </body>
+
+</html>

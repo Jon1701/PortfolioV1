@@ -1,0 +1,52 @@
+body {
+	background: url("https://upload.wikimedia.org/wikipedia/commons/5/53/Colosseum_in_Rome%2C_Italy_-_April_2007.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+body, .navbar {
+	font-family: "Oswald";
+	font-size: 2.5em;
+	color: white;
+}
+
+.navbar {
+	top: 15px;
+}
+
+.navbar-header {
+	float: left;
+	padding: 15px;
+	text-align: center;
+	width: 100%;
+}
+
+.navbar-brand, .navbar-brand:hover, .navbar-brand:focus {
+
+	float:none;
+	color: white;
+	font-family: "Oswald";
+	font-size: 0.75em;
+}
+
+.content-container {
+	max-height: 100%;
+	overflow: hidden;
+	background-color: rgba(0,0,0, 0.5);
+	
+}
+
+section {
+	width: 95%;
+	height: 100%;
+	margin: 50px auto;
+	text-align: center;
+	padding: 15%;
+}
+
+#input-number, #input-numeral {
+	background-color: rgba(0,0,0,0);
+	color: white;
+	border-radius: 0;
+}

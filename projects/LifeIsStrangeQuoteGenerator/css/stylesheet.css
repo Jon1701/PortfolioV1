@@ -1,0 +1,140 @@
+/*
+ *
+ * New font.
+ *
+ */
+ 
+@font-face {
+	font-family: "Dudu Calligraphy";
+	src: url("../media/fonts/Dudu_Calligraphy.ttf")
+}
+
+
+
+
+/*
+ *
+ * Backgrounds.
+ *
+ */
+body {
+	background-color: rgba(0,0,0,1);
+	background-image: url("https://i.imgur.com/0lEy3Ij.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	font-family: "Dudu Calligraphy";
+	color: white;
+}
+
+
+
+
+/*
+ *
+ * Social Media buttons.
+ *
+ */
+#btnarray-social-media {
+	margin-top: 0px;
+	padding-top: 0px;
+	text-align: center;
+}
+ 
+#btn-twitter, #btn-facebook, #btn-copy {
+	background-color: rgba(0,0,0,0);
+	font-size: 0.5em;
+}
+
+#btn-twitter:focus, #btn-facebook:focus, #btn-copy:focus {
+	color: rgba(255, 255, 255, 1);
+}
+
+#btn-twitter:hover {
+	color: rgba(29, 202, 255, 1);
+}
+
+#btn-facebook:hover {
+	color: rgba(59, 89, 152, 1);
+}
+
+#btn-copy:hover {
+	color: orange;
+}
+
+
+
+
+/*
+ *
+ * Text not selectable..
+ *
+ */
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;           /* non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+
+
+
+
+
+
+
+/*
+ *
+ * Quote container and styling.
+ *
+ */
+#quote-container {
+	position: relative;
+
+	font-size: 7vmin;
+	width: 85%;
+}
+
+#quote-content {
+	position: relative;
+	margin: 0 auto;
+}
+
+#quote-source {
+	position: relative;
+	float: right;
+}
+
+
+
+
+/*
+ *
+ * Links.
+ *
+ */
+
+a, a:visited {
+	color: #FFFFFF;	
+}
+
+a:hover {
+	color: orange;
+	text-decoration: none;	
+}
+
+
+
+/*
+ *
+ * Footer.
+ *
+ */
+
+#footer {
+	font-size: 2.85vmin;	
+}

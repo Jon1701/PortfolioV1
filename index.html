@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>JonBalon.io - Portfolio</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Jquery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.js"></script>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+		<!-- Font-Awesome -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+		<!-- Google Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+
+		<!-- Mustache.js Templating Engine -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+		<script type="text/javascript" src="/js/templating.js"></script>
+
+
+		<!-- My styles -->
+		<link rel="stylesheet" href="/css/stylesheet.css" type="text/css">
+
+	</head>
+
+	<body>
+
+		<div id="header">
+			<nav class="navbar-custom navbar-bg-home navbar-fixed-top">
+				<div class="container-fluid">
+
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+						<a class="navbar-brand" href="http://www.jonbalon.io">JonBalon.io</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#home">Home</a></li>
+							<li><a href="#about">About Me</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+
+
+					</div><!-- /.navbar-collapse -->
+
+				</div><!-- /.container-fluid -->
+			</nav>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<a name="home"></a>
+		<section id="home" class="container-fluid section-home">
+
+			<!-- Section Title -->
+			<span class="section-title">Jon Balon</span>
+
+			<!-- Section Content -->
+			<div class="section-content">
+
+				<hr/>
+
+				<div class="tagline">Full Stack Developer</div>
+
+				<hr/>
+
+				<!-- Button array -->
+				<div class="container">
+					<div class="row">
+
+						<!-- GitHub Button-->
+						<div class="col-xs-4">
+							<a href="https://github.com/Jon1701" target="_blank">
+								<i class="fa fa-github-square fa-fw" id="btn-github"></i>
+							</a>
+						</div>
+
+						<!-- LinkedIn Button -->
+						<div class="col-xs-4">
+							<a href="https://ca.linkedin.com/in/jonbalon" target="_blank">
+								<i class="fa fa-linkedin-square fa-fw" id="btn-linkedin"></i>
+							</a>
+						</div>
+
+						<!-- freeCodeCamp Button -->
+						<div class="col-xs-4">
+							<a href="https://www.freecodecamp.com/jon1701" target="_blank">
+								<i class="fa fa-fire fa-fw" id="btn-freecodecamp"></i>
+							</a>
+						</div>
+					</div>
+				</div> <!-- End Button Array -->
+
+			</div>
+		</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<a name="about"></a>
+		<section id="about" class="container-fluid section-about">
+
+
+			<!-- Section Title -->
+			<span class="section-title">About Me</span>
+
+			<div class="section-content">
+				<p>
+				Hi, my name is Jon, I am a self-taught Full Stack Developer currently based in Toronto.
+				</p>
+				<p>
+				I graduated from the University of Toronto with a Bachelor of Science (Statistics, Mathematics, French) in 2012.
+				</p>
+				<p>
+				In 2014, I completed the Certificate in Management of Enterprise Data Analytics (Big Data) from the University of Toronto School of Continuing Studies.
+				</p>
+				<p>
+				Currently, I am in the process of completing the Full Stack Developer Certification on freeCodeCamp.com.
+				</p>
+			</div>
+		</section>
+
+
+
+
+
+
+
+		<a name="projects"></a>
+		<section id="projects" class="container-fluid section-projects">
+
+			<!-- Section Title -->
+			<span class="section-title">Projects</span>
+
+			<div class="section-content">
+
+				<div class="container-fluid">
+
+					<!-- Row -->
+					<div class="row">
+
+
+						<!-- Template -->
+						<script type="text/template" id="template-project">
+							{{ #projects }}
+
+							<!-- Project Start -->
+							<div class="project-item col-sm-6 col-md-4 col-lg-4">
+
+							  <!-- Project Image -->
+							  <div class="project-image">
+							    <a href="{{ linkUrl }}" target="_blank">
+							      <img src="{{ thumbnailUrl }}" class="img-responsive"/>
+							    </a>
+							  </div>
+
+							  <!-- Button array -->
+							  <div class="project-code-repositories">
+							    <div class="btn-group btn-group-justified">
+
+							      <!-- Demo button -->
+							      <div class="btn-group" role="group">
+							        <a href="{{ demoUrl }}" target="_blank" type="button" role="button" class="btn btn-demo-livedemo btn-code-repository"><span class="fa fa-caret-square-o-right"></span> Demo</a>
+							      </div>
+
+							      <!-- GitHub button-->
+							      <div class="btn-group" role="group">
+							        <a href="{{ githubUrl }}" target="_blank" type="button" role="button" class="btn btn-github-demo btn-code-repository"><span class="fa fa-github"></span> GitHub</a>
+							      </div>
+
+							    </div>
+							  </div> <!-- End Button array -->
+
+							  <!-- Project Name -->
+							  <div class="project-title">
+							    {{ projectTitle }}
+							  </div>
+
+							  <!-- Project Description -->
+							  <div class="project-description">
+							    {{ projectDescription }}
+							  </div>
+
+							</div> <!-- End Project\Column -->
+
+							{{ /projects  }}
+						</script>
+
+						<!-- Project Item template -->
+						<div id="project-template-result"></div>
+
+					<script>
+					/*
+
+					<!-- Project Start -->
+						<div class="project-item col-sm-6 col-md-4 col-lg-4">
+
+							<!-- Project Image -->
+							<div class="project-image">
+								<a href="projects/LifeIsStrangeQuoteGenerator" target="_blank">
+									<img src="img/project-thumbnails/project-lis-quotegen.jpg" class="img-responsive"/>
+								</a>
+							</div>
+
+							<!-- Button array -->
+							<div class="project-code-repositories">
+								<div class="btn-group btn-group-justified">
+
+									<!-- Demo button -->
+									<div class="btn-group" role="group">
+										<a href="projects/LifeIsStrangeQuoteGenerator" target="_blank" type="button" role="button" class="btn btn-demo-livedemo btn-code-repository"><span class="fa fa-caret-square-o-right"></span> Demo</a>
+									</div>
+
+									<!-- CodePen button
+									<div class="btn-group" role="group">
+										<a href="#" target="_blank" type="button" role="button" class="btn btn-codepen-demo btn-code-repository"><span class="fa fa-codepen"></span> CodePen</a>
+									</div> -->
+
+									<!-- GitHub button-->
+									<div class="btn-group" role="group">
+										<a href="https://github.com/Jon1701/lifeisstrange-quote-generator" target="_blank" type="button" role="button" class="btn btn-github-demo btn-code-repository"><span class="fa fa-github"></span> GitHub</a>
+									</div>
+
+								</div>
+							</div> <!-- End Button array -->
+
+							<!-- Project Name -->
+							<div class="project-title">
+								Life Is Strange Quote Generator
+							</div>
+
+							<!-- Project Description -->
+							<div class="project-description">
+								Relive the horror here
+							</div>
+						</div> <!-- End Project\Column -->
+
+
+
+
+
+
+						<!-- Project Start -->
+						<div class="project-item col-sm-6 col-md-4 col-lg-4">
+
+							<!-- Project Image -->
+							<div class="project-image">
+								<a href="projects/StatisticsToolbox" target="_blank">
+									<img src="img/project-thumbnails/project-stats-toolbox.jpg" class="img-responsive"/>
+								</a>
+							</div>
+
+							<!-- Button array -->
+							<div class="project-code-repositories">
+								<div class="btn-group btn-group-justified">
+
+									<!-- Demo button -->
+									<div class="btn-group" role="group">
+										<a href="projects/StatisticsToolbox" target="_blank" type="button" role="button" class="btn btn-demo-livedemo btn-code-repository"><span class="fa fa-caret-square-o-right"></span> Demo</a>
+									</div>
+
+									<!-- CodePen button
+									<div class="btn-group" role="group">
+										<a href="#1" target="_blank" type="button" role="button" class="btn btn-codepen-demo btn-code-repository"><span class="fa fa-codepen"></span> CodePen</a>
+									</div>-->
+
+									<!-- GitHub button
+									<div class="btn-group" role="group">
+										<a href="#1" target="_blank" type="button" role="button" class="btn btn-github-demo btn-code-repository"><span class="fa fa-github"></span> GitHub</a>
+									</div>-->
+
+								</div>
+							</div> <!-- End Button array -->
+
+							<!-- Project Name -->
+							<div class="project-title">
+								Statistics Toolbox v0.05 Alpha
+							</div>
+
+							<!-- Project Description -->
+							<div class="project-description">
+								Lies, damned lies, and statistics
+							</div>
+						</div> <!-- End Project\Column -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						<!-- Project Start -->
+						<div class="project-item col-sm-6 col-md-4 col-lg-4">
+
+							<!-- Project Image -->
+							<div class="project-image">
+								<a href="projects/RomanNumeralConverter" target="_blank">
+									<img src="img/project-thumbnails/project-roman-numerals.jpg" class="img-responsive"/>
+								</a>
+							</div>
+
+							<!-- Button array -->
+							<div class="project-code-repositories">
+								<div class="btn-group btn-group-justified">
+
+									<!-- Demo button -->
+									<div class="btn-group" role="group">
+										<a href="projects/RomanNumeralConverter" target="_blank" type="button" role="button" class="btn btn-demo-livedemo btn-code-repository"><span class="fa fa-caret-square-o-right"></span> Demo</a>
+									</div>
+
+									<!-- CodePen button
+									<div class="btn-group" role="group">
+										<a href="#1" target="_blank" type="button" role="button" class="btn btn-codepen-demo btn-code-repository"><span class="fa fa-codepen"></span> CodePen</a>
+									</div>
+									-->
+
+									<!-- GitHub button
+									<div class="btn-group" role="group">
+										<a href="#1" target="_blank" type="button" role="button" class="btn btn-github-demo btn-code-repository"><span class="fa fa-github"></span> GitHub</a>
+									</div>
+									-->
+
+								</div>
+							</div> <!-- End Button array -->
+
+							<!-- Project Name -->
+							<div class="project-title">
+								Roman Numeral Converter
+							</div>
+
+							<!-- Project Description -->
+							<div class="project-description">
+								Et convertam inter numeris romanis numeros
+							</div>
+						</div> <!-- End Project\Column -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+						<!-- Project Start -->
+						<div class="project-item col-sm-6 col-md-4 col-lg-4">
+
+							<!-- Project Image -->
+							<div class="project-image">
+								<a href="projects/WeatherApp" target="_blank">
+									<img src="img/project-thumbnails/project-weatherapp.jpg" class="img-responsive"/>
+								</a>
+							</div>
+
+							<!-- Button array -->
+							<div class="project-code-repositories">
+								<div class="btn-group btn-group-justified">
+
+									<!-- Demo button -->
+									<div class="btn-group" role="group">
+										<a href="projects/WeatherApp" target="_blank" type="button" role="button" class="btn btn-demo-livedemo btn-code-repository"><span class="fa fa-caret-square-o-right"></span> Demo</a>
+									</div>
+
+									<!-- CodePen button
+									<div class="btn-group" role="group">
+										<a href="#1" target="_blank" type="button" role="button" class="btn btn-codepen-demo btn-code-repository"><span class="fa fa-codepen"></span> CodePen</a>
+									</div>
+									-->
+
+									<!-- GitHub button-->
+									<div class="btn-group" role="group">
+										<a href="https://github.com/Jon1701/weather-app" target="_blank" type="button" role="button" class="btn btn-github-demo btn-code-repository"><span class="fa fa-github"></span> GitHub</a>
+									</div>
+
+
+								</div>
+							</div> <!-- End Button array -->
+
+							<!-- Project Name -->
+							<div class="project-title">
+								Simple Weather App
+							</div>
+
+							<!-- Project Description -->
+							<div class="project-description">
+								Detects the User's location and displays the local weather
+							</div>
+						</div> <!-- End Project\Column -->
+
+
+						*/
+						</script>
+
+
+
+
+
+
+					</div> <!-- End row -->
+				</div>
+
+			</div>
+
+		</section>
+
+		<a name="contact"></a>
+		<section id="contact" class="container-fluid section-contact">
+
+			<!-- Section Title -->
+			<span class="section-title">Contact</span>
+
+			<div class="section-content">
+
+				<!-- Button array -->
+				<div class="container">
+					<div class="row">
+
+						<!-- LinkedIn Button -->
+						<div class="col-xs-12">
+							<a href="https://ca.linkedin.com/in/jonbalon" target="_blank">
+								<i class="fa fa-linkedin-square fa-fw" id="btn-linkedin"></i>
+							</a>
+						</div>
+
+					</div>
+				</div> <!-- End Button Array -->
+
+
+
+			</div>
+		</section>
+
+		<div id="footer">
+			<nav class="navbar-footer navbar-static-bottom">
+				Copyright &copy; 2016 <a href="https://ca.linkedin.com/in/jonbalon" target="_blank">Jon Balon</a>. All Rights Reserved.
+			</nav>
+		</div>
+
+		<!-- jQuery animations for active navbar -->
+		<script type="text/javascript" src="/js/animations-jquery.js"></script>
+
+
+
+	</body>
+</html>

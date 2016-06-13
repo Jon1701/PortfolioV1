@@ -1,0 +1,18 @@
+body {
+  width: 100%;
+  text-align: center;
+}
+
+#container-search-results {
+  width: 100%;
+  margin-top: 160px;
+}
+
+.panel-search-result{
+  margin-bottom: 30px;
+  border-radius: 0;
+}
+
+.nav-footer-custom {
+  text-align: center;
+}
